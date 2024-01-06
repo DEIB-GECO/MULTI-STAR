@@ -1,0 +1,34 @@
+
+# Feature selection can be: 
+# univariate, wrapper, embedded, hybrid...
+
+train:
+  solve_class_imbalance: False # Not solving CI problem corresponds  to case0
+  type_class_imbalance: 'None' # ['None', 'case1', 'case2', 'case3', 'case4']
+  thresh_lumA: None # [None, case1a -> 200, case1b -> 225, case1c -> 250, 175]
+  cross_val: False
+  test_size: 0.3
+  random_state: 4
+  random_state_split: 1
+  optim: True
+  grid_scoring: 'accuracy' # 'f1_weighted'
+  downsample_test: False
+  num_folds: 10
+  num_feat: 750 # Cris-40, Brca-50
+  type_feat_selection: 'rare' # ['rare', 'univariate', 'wrapper', 'embedded', 'hybrid']
+  use_multilabel_dataset: True # True - PAM50, False - Original
+  brca_cris: 'BRCA' # 'BRCA', 'CRIS'
+
+paths:
+  data: ${hydra:runtime.cwd}/data
+  brca_dataset: ${hydra:runtime.cwd}/data/tcga_brca_raw_19036_1053samples.pkl
+  cris_dataset: ${hydra:runtime.cwd}/data/tcga_cris_raw_24356_620samples.pkl
+  ml_dataset: ${hydra:runtime.cwd}/data/dataset_multilabel.pkl
+  experiment: ${hydra:runtime.cwd}/experiments
+  model: ${hydra:runtime.cwd}/models
+  single_label_model: ${hydra:runtime.cwd}/models/single-label_models
+  images: ${hydra:runtime.cwd}/images
+  artefacts: ${hydra:runtime.cwd}/artefacts
+  result: ${hydra:runtime.cwd}/results
+  figures: ${hydra:runtime.cwd}/figures
+
