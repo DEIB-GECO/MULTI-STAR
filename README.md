@@ -1,5 +1,5 @@
 # MULTI-STAR
-Multi-label subtyping and advanced recognition of cancer patients
+Multi-label subtyping and advanced recognition of patient primary and seconday assignments. 'A novel Machine Learning-based workflow to capture intra-patient heterogeneity through transcriptional multi-label characterization and clinically relevant classification'.
 
 ## Description
 We developed and offer a computational workflow, named MULTI-STAR, to address current limitations in state-of-the-art similarity-based stratification approaches. 
