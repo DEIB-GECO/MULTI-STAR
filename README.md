@@ -20,7 +20,6 @@ which can be further evaluated based on relevant clinical properties like the pr
 
 ## Application use cases
 The effectiveness of the MULTI-STAR approach was validated and showcased through the development of multi-label classifiers for breast and colorectal cancer subtyping. 
-So-obtained classifiers offered not only superior performance but also more comprehensive insights into patient heterogeneity, even surpassing existing methods in terms of prognostic value of predictions and single-sample usability, as required by clinical practice. 
-.
+So-obtained classifiers offered not only superior performance but also more comprehensive insights into patient heterogeneity, even surpassing existing methods in terms of prognostic value of predictions and single-sample usability, as required by clinical practice.
 
 
